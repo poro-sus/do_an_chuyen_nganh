@@ -1,0 +1,1381 @@
+[
+  {
+    "title": "Clean Code",
+    "authors": [
+      "Robert C. Martin"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": "https://www.pearson.com/en-us/subject-catalog/p/clean-code-a-handbook-of-agile-software-craftsmanship/P200000009352",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Lập trình"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "authors": [
+      "Andy Hunt",
+      "Dave Thomas"
+    ],
+    "isbn": "9780201616224",
+    "cover": "/covers/pragmatic.jpg",
+    "source": "https://openlibrary.org/books/OL7408140M",
+    "pages": 352,
+    "year": null,
+    "publisher": "Addison-Wesley",
+    "category": "Lập trình",
+    "remote_cover": "https://covers.openlibrary.org/b/id/15136784-L.jpg"
+  },
+  {
+    "title": "Atomic Habits",
+    "authors": [
+      "James Clear"
+    ],
+    "isbn": "9781847941831",
+    "cover": "/covers/atomic.jpg",
+    "source": "https://openlibrary.org/books/OL27918581M",
+    "pages": 320,
+    "year": null,
+    "publisher": "Random House Business",
+    "category": "Phát triển bản thân",
+    "remote_cover": "https://covers.openlibrary.org/b/id/15267567-L.jpg"
+  },
+  {
+    "title": "The Psychology of Money",
+    "authors": [
+      "Morgan Housel"
+    ],
+    "isbn": "9780857197689",
+    "cover": "/covers/1.jpg",
+    "source": "http://openlibrary.org/books/OL62588694M/The_Psychology_of_Money",
+    "pages": 250,
+    "year": "2020",
+    "publisher": "Harriman House",
+    "category": "Kinh doanh",
+    "remote_cover": "https://covers.openlibrary.org/b/id/15256769-L.jpg"
+  },
+  {
+    "title": "Sapiens A brief Story of Human Kind",
+    "authors": [
+      "Yuval Noah Harari"
+    ],
+    "isbn": "9780062316097",
+    "cover": "/covers/2.jpg",
+    "source": "http://openlibrary.org/books/OL28440487M/Sapiens_A_brief_Story_of_Human_Kind",
+    "pages": 464,
+    "year": "2011",
+    "publisher": "Harper",
+    "category": "Lịch sử",
+    "remote_cover": "https://covers.openlibrary.org/b/id/14369194-L.jpg"
+  },
+  {
+    "title": "Deep Work",
+    "authors": [
+      "Cal Newport"
+    ],
+    "isbn": "9781455586691",
+    "cover": "/covers/3.jpg",
+    "source": "http://openlibrary.org/books/OL26314691M/Deep_Work",
+    "pages": 295,
+    "year": "2016",
+    "publisher": "Grand Central Publishing",
+    "category": "Phát triển bản thân",
+    "remote_cover": "https://covers.openlibrary.org/b/id/14859612-L.jpg"
+  },
+  {
+    "title": "Thinking, fast and slow",
+    "authors": [
+      "Daniel Kahneman"
+    ],
+    "isbn": "9780141033570",
+    "cover": null,
+    "source": "http://openlibrary.org/books/OL62456765M/Thinking_fast_and_slow",
+    "pages": null,
+    "year": "2012",
+    "publisher": "Penguin",
+    "category": "Phát triển bản thân"
+  },
+  {
+    "title": "The 4-hour workweek",
+    "authors": [
+      "Timothy Ferriss"
+    ],
+    "isbn": "9780307465351",
+    "cover": "/covers/5.jpg",
+    "source": "http://openlibrary.org/books/OL23235832M/The_4-hour_workweek",
+    "pages": null,
+    "year": "2009",
+    "publisher": "Crown Publishers",
+    "category": "Kinh doanh",
+    "remote_cover": "https://covers.openlibrary.org/b/id/6306016-L.jpg"
+  },
+  {
+    "title": "The Design of Everyday Things",
+    "authors": [
+      "Donald A. Norman"
+    ],
+    "isbn": "9780465050659",
+    "cover": "/covers/8.jpg",
+    "source": "http://openlibrary.org/books/OL25726927M/The_Design_of_Everyday_Things",
+    "pages": 368,
+    "year": "2013",
+    "publisher": "Basic Books",
+    "category": "Thiết kế",
+    "remote_cover": "https://covers.openlibrary.org/b/id/14428212-L.jpg"
+  },
+  {
+    "title": "The Alchemist",
+    "authors": [
+      "Paulo Coelho"
+    ],
+    "isbn": "9780061122415",
+    "cover": "/covers/9.jpg",
+    "source": "http://openlibrary.org/books/OL7288233M/The_Alchemist",
+    "pages": 208,
+    "year": "2006",
+    "publisher": "HarperCollins",
+    "category": "Văn học",
+    "remote_cover": "https://covers.openlibrary.org/b/id/15271736-L.jpg"
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "authors": [
+      "Mark Manson"
+    ],
+    "isbn": "9780062457714",
+    "cover": "/covers/10.jpg",
+    "source": "http://openlibrary.org/books/OL62656811M/The_Subtle_Art_of_Not_Giving_a_F*ck",
+    "pages": 224,
+    "year": "2016",
+    "publisher": "HarperOne",
+    "category": "Phát triển bản thân",
+    "remote_cover": "https://covers.openlibrary.org/b/id/15262534-L.jpg"
+  },
+  {
+    "title": "The Hobbit",
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "isbn": "9780547928227",
+    "cover": "/covers/11.jpg",
+    "source": "http://openlibrary.org/books/OL33891995M/The_Hobbit",
+    "pages": 300,
+    "year": "2012",
+    "publisher": "Mariner Books",
+    "category": "Văn học",
+    "remote_cover": "https://covers.openlibrary.org/b/id/12003329-L.jpg"
+  },
+  {
+    "title": "Reconfigurable Processor Array A Bit Sliced Parallel Computer (USA)",
+    "authors": [
+      "A. Rushton"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8237007-L.jpg",
+    "source": "https://openlibrary.org/works/OL2829091W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "The art of computer programming",
+    "authors": [
+      "Donald Knuth"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/136600-L.jpg",
+    "source": "https://openlibrary.org/works/OL257263W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Software Engineering",
+    "authors": [
+      "Roger S. Pressman",
+      "Bruce Maxim"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/66176-L.jpg",
+    "source": "https://openlibrary.org/works/OL284009W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "The C Programming Language",
+    "authors": [
+      "Brian W. Kernighan",
+      "Dennis MacAlistair Ritchie"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6684943-L.jpg",
+    "source": "https://openlibrary.org/works/OL4617640W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "C++",
+    "authors": [
+      "Paul J. Deitel",
+      "Harvey M. Deitel"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/15111450-L.jpg",
+    "source": "https://openlibrary.org/works/OL7943176W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Game Ai Pro 360",
+    "authors": [
+      "Steve Rabin"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/13167358-L.jpg",
+    "source": "https://openlibrary.org/works/OL21655116W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Tom Clancy's Net Force",
+    "authors": [
+      "Tom Clancy",
+      "Steve R. Pieczenik"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/225568-L.jpg",
+    "source": "https://openlibrary.org/works/OL448894W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "IBM PC Apprentice",
+    "authors": [
+      "Inc. Wordware Pub.",
+      "Leonard Paul Kubiak"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/11723779-L.jpg",
+    "source": "https://openlibrary.org/works/OL7957316W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Information systems literacy",
+    "authors": [
+      "Hossein Bidgoli"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/3945707-L.jpg",
+    "source": "https://openlibrary.org/works/OL2645732W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Numerical methods for engineers",
+    "authors": [
+      "Steven C. Chapra",
+      "Raymond P. Canale"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/63301-L.jpg",
+    "source": "https://openlibrary.org/works/OL2720189W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Structured Computer Organization",
+    "authors": [
+      "Andrew S. Tanenbaum"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/9378728-L.jpg",
+    "source": "https://openlibrary.org/works/OL1970690W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "IEEE standard for information technology",
+    "authors": [
+      "Institute of Electrical and Electronics Engineers"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/1883601-L.jpg",
+    "source": "https://openlibrary.org/works/OL2062550W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Inside Macintosh",
+    "authors": [
+      "Apple Computer Inc."
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/4606739-L.jpg",
+    "source": "https://openlibrary.org/works/OL8019573W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Introduction to Algorithms",
+    "authors": [
+      "Thomas H. Cormen",
+      "Charles E. Leiserson",
+      "Ronald L. Rivest",
+      "Clifford Stein"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/2341462-L.jpg",
+    "source": "https://openlibrary.org/works/OL4781294W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "DOS",
+    "authors": [
+      "Kris A. Jamsa"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/3956527-L.jpg",
+    "source": "https://openlibrary.org/works/OL282868W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Raspberry Pi User Guide",
+    "authors": [
+      "Eben Upton"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/7605940-L.jpg",
+    "source": "https://openlibrary.org/works/OL17451852W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Structure and Interpretation of Computer Programs (SICP)",
+    "authors": [
+      "Harold Abelson",
+      "Gerald Jay Sussman",
+      "Julie Sussman"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/149338-L.jpg",
+    "source": "https://openlibrary.org/works/OL3267304W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Running MS-DOS 20th Anniversary Edition",
+    "authors": [
+      "Van Wolverton"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/461390-L.jpg",
+    "source": "https://openlibrary.org/works/OL3292376W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Mostly BASIC",
+    "authors": [
+      "Howard Berebon",
+      "Howard Berenbon"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8697035-L.jpg",
+    "source": "https://openlibrary.org/works/OL2995643W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Hackers",
+    "authors": [
+      "Steven Levy"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/106396-L.jpg",
+    "source": "https://openlibrary.org/works/OL804638W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Learning to use microcomputer applications",
+    "authors": [
+      "Gary B. Shelly"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6693615-L.jpg",
+    "source": "https://openlibrary.org/works/OL758361W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "C For Dummies",
+    "authors": [
+      "Dan Gookin",
+      "Marcus B+ckmann"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6441511-L.jpg",
+    "source": "https://openlibrary.org/works/OL15184749W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "The Book of Shaders",
+    "authors": [
+      "Patricio Gonzalez Vivo"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/15116918-L.jpg",
+    "source": "https://openlibrary.org/works/OL43943799W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Công nghệ thông tin"
+  },
+  {
+    "title": "Romeo and Juliet",
+    "authors": [
+      "William Shakespeare"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8257991-L.jpg",
+    "source": "https://openlibrary.org/works/OL362427W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Brave New World",
+    "authors": [
+      "Aldous Huxley"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8231823-L.jpg",
+    "source": "https://openlibrary.org/works/OL64365W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "The Invisible Man",
+    "authors": [
+      "H. G. Wells"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6419199-L.jpg",
+    "source": "https://openlibrary.org/works/OL52266W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "De rerum natura",
+    "authors": [
+      "Titus Lucretius Carus"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/566208-L.jpg",
+    "source": "https://openlibrary.org/works/OL1548597W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Le Tour du Monde en Quatre-Vingts Jours",
+    "authors": [
+      "Jules Verne"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6976035-L.jpg",
+    "source": "https://openlibrary.org/works/OL1100007W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Two years before the mast",
+    "authors": [
+      "Richard Henry Dana"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8245243-L.jpg",
+    "source": "https://openlibrary.org/works/OL1815550W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Houghton Mifflin Science California",
+    "authors": [
+      "Houghton Mifflin Company Staff"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12746894-L.jpg",
+    "source": "https://openlibrary.org/works/OL27468204W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "The Island of Dr. Moreau",
+    "authors": [
+      "H. G. Wells"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/968312-L.jpg",
+    "source": "https://openlibrary.org/works/OL381550W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Ἱστορίαι",
+    "authors": [
+      "Ἡρόδοτος"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/9829028-L.jpg",
+    "source": "https://openlibrary.org/works/OL15678068W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "On the origin of species by means of natural selection",
+    "authors": [
+      "Charles Darwin"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/7153600-L.jpg",
+    "source": "https://openlibrary.org/works/OL515051W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Houghton Mifflin Science Leveled Readers",
+    "authors": [
+      "Houghton Mifflin Company Staff"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12917356-L.jpg",
+    "source": "https://openlibrary.org/works/OL27467443W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "[William Wheeler Hubbell, authorized to apply for patents.]",
+    "authors": [
+      "United States. Congress. Senate. Committee on Patents"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/10200621-L.jpg",
+    "source": "https://openlibrary.org/works/OL7574091W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Advances in Heterocyclic Chemistry",
+    "authors": [
+      "Alan R. Katritzky",
+      "Jeanne Mund Lagowski",
+      "A. J. Boulton"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/5030345-L.jpg",
+    "source": "https://openlibrary.org/works/OL120822W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "The principall navigations, voiages, and discoveries of the English nations",
+    "authors": [
+      "Richard Hakluyt",
+      "Jack Beeching",
+      "Richard David",
+      "Edmund Goldsmid"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6052194-L.jpg",
+    "source": "https://openlibrary.org/works/OL3639910W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Principles of Anatomy and Physiology",
+    "authors": [
+      "Gerard J. Tortora",
+      "Bryan H. Derrickson",
+      "Brendan Burkett",
+      "Danielle Dye",
+      "Julie Cooke",
+      "HOUGHTON MIFFLIN HARCOURT",
+      "Gregory Peoples",
+      "Tara Diversi",
+      "Mark McKean",
+      "Latika Samalia",
+      "Rebecca Mellifont",
+      "Richard G. Smith undifferentiated",
+      "Gerald J. Tortura",
+      "Sandra R. Grabowski",
+      "Tortora",
+      "Sandra Reynolds Grabowski"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/3810109-L.jpg",
+    "source": "https://openlibrary.org/works/OL1827306W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Moralia",
+    "authors": [
+      "Plutarch"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/5788251-L.jpg",
+    "source": "https://openlibrary.org/works/OL723491W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Essays",
+    "authors": [
+      "Francis Bacon"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8236351-L.jpg",
+    "source": "https://openlibrary.org/works/OL69382W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Histoire naturelle",
+    "authors": [
+      "Georges-Louis Leclerc, comte de Buffon",
+      "Georges Louis Leclerc De Buffon"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6130908-L.jpg",
+    "source": "https://openlibrary.org/works/OL1356870W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Mutual Aid",
+    "authors": [
+      "Peter Kropotkin"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/10128573-L.jpg",
+    "source": "https://openlibrary.org/works/OL1105375W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Discours de la méthode",
+    "authors": [
+      "René Descartes"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8236442-L.jpg",
+    "source": "https://openlibrary.org/works/OL1151518W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Kokuritsu Kokkai Toshokan shozō Meijiki kankō tosho maikuro-ban shūsei",
+    "authors": [
+      "Kokuritsu Kokkai Toshokan (Japan)"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": "https://openlibrary.org/works/OL33207850W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "The book of the damned",
+    "authors": [
+      "Charles Fort"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/825884-L.jpg",
+    "source": "https://openlibrary.org/works/OL66059W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "Northern Lights",
+    "authors": [
+      "Philip Pullman"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8747028-L.jpg",
+    "source": "https://openlibrary.org/works/OL28988W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "1st Report [Session 1993-94]",
+    "authors": [
+      "Rand McNally"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/11962006-L.jpg",
+    "source": "https://openlibrary.org/works/OL14903351W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Khoa học"
+  },
+  {
+    "title": "The Prince",
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12726168-L.jpg",
+    "source": "https://openlibrary.org/works/OL1089297W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Persuasion",
+    "authors": [
+      "Jane Austen"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12824691-L.jpg",
+    "source": "https://openlibrary.org/works/OL66544W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Moby Dick",
+    "authors": [
+      "Herman Melville"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/10544254-L.jpg",
+    "source": "https://openlibrary.org/works/OL102749W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Hard Times",
+    "authors": [
+      "Charles Dickens"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8236916-L.jpg",
+    "source": "https://openlibrary.org/works/OL8193387W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Yellow Wallpaper",
+    "authors": [
+      "Charlotte Perkins Gilman"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/652029-L.jpg",
+    "source": "https://openlibrary.org/works/OL2772007W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Mayor of Casterbridge",
+    "authors": [
+      "Thomas Hardy"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/1260617-L.jpg",
+    "source": "https://openlibrary.org/works/OL8193406W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "As a Man Thinketh",
+    "authors": [
+      "James Allen"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6268048-L.jpg",
+    "source": "https://openlibrary.org/works/OL43024W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Ulysses",
+    "authors": [
+      "James Joyce"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/13136548-L.jpg",
+    "source": "https://openlibrary.org/works/OL86318W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Saint Francis of Assisi",
+    "authors": [
+      "Gilbert Keith Chesterton"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/502618-L.jpg",
+    "source": "https://openlibrary.org/works/OL76399W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "La Poetica",
+    "authors": [
+      "Aristotle"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/129771-L.jpg",
+    "source": "https://openlibrary.org/works/OL151515W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Basil",
+    "authors": [
+      "Wilkie Collins"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12968342-L.jpg",
+    "source": "https://openlibrary.org/works/OL176086W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Princesse de Clèves",
+    "authors": [
+      "Madame de La Fayette",
+      "Everett Carll Ladd",
+      "Ann Gostyn Serow",
+      "Thomas Sergeant Perry",
+      "François duc de La Rochefoucauld",
+      "Jean Mesnard",
+      "Jérôme Lecompte",
+      "H. Ashton",
+      "Robin Buss",
+      "Duas Duas Columnas",
+      "M. Philippe Ballin",
+      "Selina Hastings",
+      "Nancy Mitford",
+      "Alba Longa",
+      "Rostand Breck",
+      "Leonard Tancock",
+      "Jérémy Lasseaux",
+      "Li yu min",
+      "Josep Antoni Grimalt Gomila",
+      "Emma Calatayud",
+      "Nicole d'Amonville Alegría",
+      "Yvonne Jocks",
+      "Thomas Perry",
+      "Jules Garnier",
+      "A. Lamotte"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/119470-L.jpg",
+    "source": "https://openlibrary.org/works/OL1244914W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Братья Карамазовы",
+    "authors": [
+      "Fiódor Dostoievski"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8272336-L.jpg",
+    "source": "https://openlibrary.org/works/OL10432709W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Der Antichrist",
+    "authors": [
+      "Friedrich Nietzsche"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/1759313-L.jpg",
+    "source": "https://openlibrary.org/works/OL15692719W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Awakening",
+    "authors": [
+      "Kate Chopin"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8750241-L.jpg",
+    "source": "https://openlibrary.org/works/OL65430W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Tender is the Night",
+    "authors": [
+      "F. Scott Fitzgerald"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6984433-L.jpg",
+    "source": "https://openlibrary.org/works/OL468485W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "authors": [
+      "Ernest Hemingway"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/463307-L.jpg",
+    "source": "https://openlibrary.org/works/OL63073W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Anthem",
+    "authors": [
+      "Ayn Rand"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/802982-L.jpg",
+    "source": "https://openlibrary.org/works/OL731737W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Problems of Philosophy",
+    "authors": [
+      "Bertrand Russell"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/6947403-L.jpg",
+    "source": "https://openlibrary.org/works/OL1088577W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "La Peste",
+    "authors": [
+      "Albert Camus"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/13151272-L.jpg",
+    "source": "https://openlibrary.org/works/OL1230715W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Varieties of Religious Experience",
+    "authors": [
+      "William James",
+      "Dr. William James",
+      "WILLIAM JAMES",
+      "James, William",
+      "William James",
+      "CrossReach Publications"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/2415434-L.jpg",
+    "source": "https://openlibrary.org/works/OL1073561W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "The Book of Dreams and Ghosts",
+    "authors": [
+      "Andrew Lang"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/1826864-L.jpg",
+    "source": "https://openlibrary.org/works/OL1088777W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Works (Awakening / Beyond the Bayou / Desiree's Baby / Kiss / Locket / Ma'ame Pelagie / Pair of Silk Stockings / Reflection / Respectable Woman)",
+    "authors": [
+      "Kate Chopin"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/11513625-L.jpg",
+    "source": "https://openlibrary.org/works/OL65438W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tâm lý học"
+  },
+  {
+    "title": "Pride and Prejudice",
+    "authors": [
+      "Jane Austen"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/14348537-L.jpg",
+    "source": "https://openlibrary.org/works/OL66554W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "authors": [
+      "Lewis Carroll"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+    "source": "https://openlibrary.org/works/OL138052W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "A Christmas Carol",
+    "authors": [
+      "Charles Dickens"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12875748-L.jpg",
+    "source": "https://openlibrary.org/works/OL32466W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "authors": [
+      "Oscar Wilde"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/14314858-L.jpg",
+    "source": "https://openlibrary.org/works/OL8193416W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Wuthering Heights",
+    "authors": [
+      "Emily Brontë"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12818862-L.jpg",
+    "source": "https://openlibrary.org/works/OL21177W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Adventures of Huckleberry Finn",
+    "authors": [
+      "Mark Twain"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8157718-L.jpg",
+    "source": "https://openlibrary.org/works/OL53908W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Hamlet",
+    "authors": [
+      "William Shakespeare"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/8281954-L.jpg",
+    "source": "https://openlibrary.org/works/OL9170454W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "The Scarlet Letter",
+    "authors": [
+      "Nathaniel Hawthorne"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/5654516-L.jpg",
+    "source": "https://openlibrary.org/works/OL455305W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Robinson Crusoe",
+    "authors": [
+      "Daniel Defoe"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/368541-L.jpg",
+    "source": "https://openlibrary.org/works/OL45089W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Emma",
+    "authors": [
+      "Jane Austen"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/9278312-L.jpg",
+    "source": "https://openlibrary.org/works/OL66513W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Oliver Twist",
+    "authors": [
+      "Charles Dickens"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/13300802-L.jpg",
+    "source": "https://openlibrary.org/works/OL8193478W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Frankenstein; or, The Modern Prometheus",
+    "authors": [
+      "Mary Shelley"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
+    "source": "https://openlibrary.org/works/OL450063W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Sense and Sensibility",
+    "authors": [
+      "Jane Austen"
+    ],
+    "isbn": null,
+    "cover": "https://covers.openlibrary.org/b/id/9278292-L.jpg",
+    "source": "https://openlibrary.org/works/OL66562W",
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Tiểu thuyết"
+  },
+  {
+    "title": "Dế Mèn phiêu lưu ký",
+    "authors": [
+      "Tô Hoài"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": null,
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Văn học",
+    "language": "Tiếng Việt"
+  },
+  {
+    "title": "Số đỏ",
+    "authors": [
+      "Vũ Trọng Phụng"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": null,
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Văn học",
+    "language": "Tiếng Việt"
+  },
+  {
+    "title": "Truyện Kiều",
+    "authors": [
+      "Nguyễn Du"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": null,
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Văn học",
+    "language": "Tiếng Việt"
+  },
+  {
+    "title": "Tắt đèn",
+    "authors": [
+      "Ngô Tất Tố"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": null,
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Văn học",
+    "language": "Tiếng Việt"
+  },
+  {
+    "title": "Lão Hạc",
+    "authors": [
+      "Nam Cao"
+    ],
+    "isbn": null,
+    "cover": null,
+    "source": null,
+    "pages": null,
+    "year": null,
+    "publisher": null,
+    "category": "Văn học",
+    "language": "Tiếng Việt"
+  }
+]

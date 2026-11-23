@@ -1,0 +1,17 @@
+export function BrandMark({ className = '' }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <path
+        d="M5 9.5C5 7.6 6.7 6.2 8.6 6.6L21.6 9.7C23 10 24 11.3 24 12.8V41L7.5 36.8C6 36.4 5 35.2 5 33.7V9.5Z"
+        fill="#7561E8"
+      />
+      <path
+        d="M43 9.5C43 7.6 41.3 6.2 39.4 6.6L26.4 9.7C25 10 24 11.3 24 12.8V41L40.5 36.8C42 36.4 43 35.2 43 33.7V9.5Z"
+        fill="#4C39B2"
+      />
+      <path d="M11 13L18 14.8V29.1L21 30V34L11 31.2V13Z" fill="white" />
+      <path d="M30 16.4L37 14.6V18.2L30 20V16.4ZM30 24L37 22.2V25.8L30 27.6V24Z" fill="#C9BEFF" />
+      <path d="M37 1L38.7 4.3L42 6L38.7 7.7L37 11L35.3 7.7L32 6L35.3 4.3L37 1Z" fill="#91CBB7" />
+    </svg>
+  )
+}

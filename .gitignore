@@ -1,0 +1,11 @@
+.tools/
+backend/.env
+frontend/.env
+**/node_modules/
+**/vendor/
+**/dist/
+*.log
+test-results/
+.runtime/
+frontend/playwright-report/
+backend/.phpunit.result.cache

@@ -1,0 +1,5 @@
+# The repository contains private configuration. Serve only backend/public via
+# Laravel's development server and frontend via Vite.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>

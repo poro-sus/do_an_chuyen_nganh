@@ -1,0 +1,99 @@
+[
+  {
+    "title": "The Pragmatic Programmer",
+    "isbn": "9780201616224",
+    "year": 1999,
+    "summary": "Điều gì làm nên một lập trình viên giỏi ngoài khả năng viết mã? Andy Hunt và Dave Thomas dẫn người đọc qua cách suy nghĩ, ra quyết định và làm việc với phần mềm — từ những thói quen hằng ngày đến thiết kế hệ thống và phối hợp trong một dự án.",
+    "editorial": {
+      "headline": "Viết phần mềm tốt hơn, bắt đầu từ cách bạn suy nghĩ.",
+      "introduction": [
+        "The Pragmatic Programmer nhìn lập trình như một nghề cần được rèn luyện liên tục. Cuốn sách kết nối trách nhiệm cá nhân, khả năng học hỏi và giao tiếp với những quyết định kỹ thuật trong công việc phát triển phần mềm.",
+        "Thay vì đi theo một ngôn ngữ duy nhất, tác giả bàn về những vấn đề xuất hiện ở nhiều dự án: kiến thức bị lặp lại, các thành phần phụ thuộc quá chặt, lỗi khó truy tìm và yêu cầu chưa được hiểu rõ. Các phần ngắn giúp bạn đọc theo thứ tự hoặc quay lại một chủ đề khi đang gặp vấn đề tương tự.",
+        "Giá trị khi đọc nằm ở việc đối chiếu ý tưởng với kinh nghiệm của chính mình. Một quyết định hợp lý trong dự án nhỏ có thể cần được xem xét lại khi đội ngũ, yêu cầu hoặc hệ thống thay đổi. Người đọc được khuyến khích chủ động quan sát, đặt câu hỏi và cải thiện cách làm việc."
+      ],
+      "topics": [
+        {"title":"Tư duy và trách nhiệm nghề nghiệp","description":"Cách nhìn nhận chất lượng công việc, đầu tư vào kiến thức và giao tiếp với người cùng làm dự án."},
+        {"title":"Thiết kế có khả năng thay đổi","description":"Giảm sự lặp lại của kiến thức, tách các mối quan tâm và cân nhắc khả năng đảo ngược một quyết định."},
+        {"title":"Làm chủ công cụ","description":"Khai thác trình soạn thảo, quản lý phiên bản, văn bản thuần và kỹ năng gỡ lỗi trong công việc hằng ngày."},
+        {"title":"Lập trình với sự kiểm chứng","description":"Xem xét điều kiện của chương trình, xử lý ngoại lệ và làm rõ những giả định có thể gây ra lỗi."},
+        {"title":"Chất lượng trong khi viết mã","description":"Quan tâm đến khả năng kiểm thử, cải tiến cấu trúc và hiểu nguyên nhân thay vì chỉ chấp nhận một đoạn mã đang chạy."},
+        {"title":"Từ yêu cầu đến một dự án hoàn chỉnh","description":"Kết nối nhu cầu người dùng với làm việc nhóm, tự động hóa, kiểm thử và tài liệu của dự án."}
+      ],
+      "takeaways": [
+        "Nhận diện nơi một thay đổi nhỏ đang kéo theo quá nhiều thay đổi khác.",
+        "Diễn đạt rõ những giả định trước khi bắt tay vào giải quyết vấn đề.",
+        "Đặt chất lượng mã trong bối cảnh người đọc mã, người sử dụng và người bảo trì.",
+        "Tạo thói quen xem lại quyết định kỹ thuật sau khi có thêm thông tin thực tế."
+      ],
+      "audience": [
+        "Sinh viên đã có trải nghiệm lập trình và muốn hình dung công việc trong một dự án thực tế.",
+        "Lập trình viên muốn hệ thống lại thói quen, công cụ và cách giải quyết vấn đề.",
+        "Người dẫn dắt nhóm muốn có thêm chủ đề để thảo luận về chất lượng phần mềm."
+      ],
+      "reading_guide": [
+        {"title":"Bắt đầu bằng một vấn đề bạn đang gặp","description":"Ghi lại một khó khăn cụ thể: sửa lỗi kéo dài, yêu cầu mơ hồ hoặc thay đổi gây ảnh hưởng rộng. Dùng câu hỏi đó để lựa chọn phần đọc đầu tiên."},
+        {"title":"Đọc cùng một dự án nhỏ","description":"Sau mỗi phần, chọn một ví dụ trong mã nguồn của bạn để so sánh. Viết vài dòng về điều phù hợp và điều cần cân nhắc trong hoàn cảnh hiện tại."},
+        {"title":"Thử một thay đổi, rồi nhìn lại","description":"Áp dụng một ý tưởng trong phạm vi nhỏ, ghi nhận kết quả và trao đổi với người cùng làm. Quay lại phần đã đọc khi bạn có thêm trải nghiệm để đối chiếu."}
+      ],
+      "author_notes": [
+        {"name":"Andy Hunt","note":"Đồng tác giả của The Pragmatic Programmer; tên Andrew Hunt được sử dụng trên thông tin xuất bản của ấn bản này."},
+        {"name":"Dave Thomas","note":"Đồng tác giả của The Pragmatic Programmer; tên David Thomas xuất hiện trên thông tin xuất bản của ấn bản này."}
+      ],
+      "edition_note": "Đây là bản tiếng Anh đầu tiên, xuất bản năm 1999. Khi đọc các ví dụ công nghệ, hãy đặt chúng trong bối cảnh của ấn bản; các phần tư duy và phương pháp là hướng thảo luận chính của phần giới thiệu này.",
+      "sources": [
+        {"title":"Thông tin ấn bản · Addison-Wesley / InformIT","url":"https://www.informit.com/store/pragmatic-programmer-from-journeyman-to-master-9780201616224"},
+        {"title":"Nội dung ấn bản đầu tiên · O’Reilly","url":"https://www.oreilly.com/library/view/hunt-the-pragmatic-programmer/020161622X/toc.html"},
+        {"title":"Bản ghi thư mục · Open Library","url":"https://openlibrary.org/books/OL7408140M"}
+      ]
+    }
+  },
+  {
+    "title":"Clean Code",
+    "editorial":{
+      "headline":"Mã nguồn cũng là một cách giao tiếp.",
+      "introduction":["Robert C. Martin đặt sự dễ hiểu và khả năng bảo trì vào trung tâm của việc viết phần mềm. Clean Code hướng người đọc chú ý đến những lựa chọn nhỏ có ảnh hưởng lớn khi một người khác cần đọc hoặc sửa mã.","Một cách tiếp cận hữu ích là đọc sách cùng một đoạn mã đang có vấn đề. Quan sát tên gọi, ranh giới hàm và cách diễn đạt ý định trước khi quyết định thay đổi."],
+      "topics":[{"title":"Tên gọi và ý định","description":"Diễn đạt điều một đoạn mã đang làm qua tên biến, hàm và cấu trúc."},{"title":"Hàm và trách nhiệm","description":"Quan sát phạm vi công việc của mỗi hàm và sự liên kết giữa các phần."},{"title":"Cải tiến mã hiện có","description":"Dùng kiểm thử và các bước thay đổi nhỏ khi làm rõ một đoạn mã."}],
+      "takeaways":["Đọc mã từ góc nhìn của người bảo trì tiếp theo.","Thảo luận về chất lượng qua ví dụ cụ thể thay vì chỉ qua sở thích."],
+      "audience":["Người đã biết lập trình cơ bản.","Lập trình viên đang làm việc với mã nguồn cần được bảo trì."],
+      "reading_guide":[{"title":"Chọn một ví dụ","description":"Mang theo một hàm khó đọc từ dự án của bạn."},{"title":"Thử và so sánh","description":"Thực hiện một thay đổi nhỏ, chạy kiểm thử và so sánh mức độ dễ hiểu."}],
+      "sources":[{"title":"Giới thiệu tác phẩm · Pearson","url":"https://www.pearson.com/en-us/subject-catalog/p/clean-code-a-handbook-of-agile-software-craftsmanship/P200000009044/9780132350884"}]
+    }
+  },
+  {
+    "title":"Atomic Habits",
+    "editorial":{
+      "headline":"Cho một thay đổi nhỏ cơ hội được lặp lại.",
+      "introduction":["James Clear khám phá cách hình thành thói quen thông qua những hành động nhỏ và điều kiện xung quanh chúng. Cuốn sách kết nối tín hiệu, sự hấp dẫn, mức độ dễ thực hiện và cảm giác sau hành động.","Khi đọc, bạn có thể chọn một thói quen cụ thể để quan sát. Việc ghi lại hoàn cảnh thực hiện giúp những ý tưởng trong sách trở nên gần gũi với lịch sinh hoạt của riêng mình."],
+      "topics":[{"title":"Nhận diện tín hiệu","description":"Quan sát điều thường xuất hiện trước khi một hành động bắt đầu."},{"title":"Giảm trở ngại","description":"Tìm cách làm cho hành động bạn muốn duy trì dễ bắt đầu hơn."},{"title":"Theo dõi sự lặp lại","description":"Chú ý đến cảm giác và phản hồi sau khi thực hiện thói quen."}],
+      "takeaways":["Đặt câu hỏi về môi trường thay vì chỉ nhìn vào ý chí.","Bắt đầu với một hành động đủ nhỏ để có thể quan sát và điều chỉnh."],
+      "audience":["Người muốn xây dựng thói quen học tập hoặc sinh hoạt.","Bạn đọc quan tâm đến hành vi và sự thay đổi cá nhân."],
+      "reading_guide":[{"title":"Chọn một hành động","description":"Viết rõ bạn muốn làm gì và trong hoàn cảnh nào."},{"title":"Quan sát một tuần","description":"Ghi nhận điều thuận lợi, trở ngại và thay đổi nhỏ bạn có thể thử."}],
+      "sources":[{"title":"Mô hình thay đổi thói quen · James Clear","url":"https://jamesclear.com/three-steps-habit-change"}]
+    }
+  },
+  {
+    "title":"Deep Work",
+    "editorial":{
+      "headline":"Dành chỗ cho những công việc cần sự tập trung.",
+      "introduction":["Cal Newport bàn về khả năng làm việc tập trung trong một môi trường có nhiều gián đoạn. Deep Work mời người đọc xem lại mối quan hệ giữa sự chú ý và những công việc đòi hỏi tư duy.","Bạn có thể tiếp cận sách bằng cách quan sát một ngày của mình: khoảng thời gian nào dành cho công việc quan trọng, và những điều gì thường cắt ngang nó?"],
+      "topics":[{"title":"Sự chú ý trong công việc","description":"Nhận diện những nhiệm vụ cần một khoảng tập trung liên tục."},{"title":"Ranh giới và nhịp làm việc","description":"Xem xét cách sắp xếp môi trường, thời gian và các yêu cầu liên lạc."},{"title":"Một thử nghiệm cá nhân","description":"Dành một khoảng làm việc có chủ đích rồi ghi nhận trải nghiệm."}],
+      "takeaways":["Phân biệt cảm giác bận rộn với tiến triển của một việc quan trọng.","Quan sát nguồn gây gián đoạn trước khi thay đổi lịch làm việc."],
+      "audience":["Sinh viên, người viết và người làm công việc tri thức.","Bạn đọc muốn xem lại cách sử dụng sự chú ý."],
+      "reading_guide":[{"title":"Chọn một nhiệm vụ","description":"Xác định một việc cụ thể cần tư duy hoặc học tập."},{"title":"Tạo một khoảng yên tĩnh","description":"Thử một phiên phù hợp với lịch của bạn và ghi lại điều đã hoàn thành."}],
+      "sources":[{"title":"Tác giả giới thiệu Deep Work · Cal Newport","url":"https://calnewport.com/the-book-facebook-doesnt-want-you-to-read/"}]
+    }
+  },
+  {
+    "title":"The Psychology of Money",
+    "isbn":"9780857197689",
+    "editorial":{
+      "headline":"Những quyết định về tiền bắt đầu từ con người.",
+      "introduction":["Morgan Housel tiếp cận tiền bạc qua hành vi, trải nghiệm và cách con người nhìn nhận thế giới. Các câu chuyện trong sách mở ra một góc thảo luận về những lý do phía sau quyết định tài chính.","Đây là một lựa chọn đọc để suy ngẫm về quan điểm cá nhân, thay vì tìm một công thức áp dụng cho mọi hoàn cảnh."],
+      "topics":[{"title":"Trải nghiệm và góc nhìn","description":"Nhìn nhận rằng mỗi người có một lịch sử và cách đánh giá khác nhau."},{"title":"Cảm xúc trong quyết định","description":"Quan sát vai trò của kỳ vọng, mong muốn và cảm giác an toàn."},{"title":"Một cuộc trò chuyện với chính mình","description":"Làm rõ điều bạn coi trọng khi nghĩ về tiền và cuộc sống."}],
+      "takeaways":["Đặt quyết định trong bối cảnh trải nghiệm của người đưa ra nó.","Phân biệt một câu chuyện thú vị với lời khuyên phù hợp cho bản thân."],
+      "audience":["Bạn đọc quan tâm đến tâm lý và cách ra quyết định.","Người muốn có thêm góc nhìn để thảo luận về tiền bạc."],
+      "reading_guide":[{"title":"Đọc một câu chuyện mỗi lần","description":"Dừng lại ở một quan điểm khiến bạn muốn suy nghĩ thêm."},{"title":"Viết một câu hỏi","description":"Ghi lại điều bạn đồng ý, băn khoăn hoặc muốn tìm hiểu bằng nguồn khác."}],
+      "sources":[{"title":"Giới thiệu tác phẩm · Harriman House","url":"https://www.harriman-house.com/psychologyofmoney"}]
+    }
+  }
+]
