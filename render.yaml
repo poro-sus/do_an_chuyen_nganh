@@ -12,7 +12,9 @@ services:
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /up
-    autoDeploy: true
+    # Tắt để việc deploy do GitHub Actions điều khiển (.github/workflows/deploy.yml): chỉ deploy
+    # sau khi test đạt, và mỗi lần push chỉ deploy một lần.
+    autoDeploy: false
     envVars:
       - key: APP_NAME
         value: LIBRIVO

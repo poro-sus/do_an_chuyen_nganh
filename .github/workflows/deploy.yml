@@ -1,0 +1,82 @@
+# CI/CD: mỗi khi nhánh main có code mới (push hoặc merge Pull Request):
+#   1) chạy test backend (Laravel) và test + build frontend (React)
+#   2) nếu cả hai đạt -> gọi Deploy Hook của Render để deploy bản mới
+#
+# Pull Request chỉ chạy test, không deploy.
+#
+# Cần tạo 1 secret trên GitHub: RENDER_DEPLOY_HOOK_URL
+#   Render: dịch vụ librivo -> Settings -> Deploy Hook -> copy URL
+#   GitHub: repo -> Settings -> Secrets and variables -> Actions -> New repository secret
+# Xem thêm docs/DEPLOY-RENDER.md
+
+name: CI/CD - Test và Deploy lên Render
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: # cho phép bấm chạy tay trong tab Actions
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  backend:
+    name: Test backend (Laravel)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      # Khoá chỉ dùng cho test, không phải khoá thật của website.
+      APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+      # Một số test đăng nhập gửi Origin localhost:5173; Sanctum cần biết host này là "stateful".
+      SANCTUM_STATEFUL_DOMAINS: localhost:5173,localhost
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.4"
+          extensions: mbstring, intl, gd, zip, dom, xml, fileinfo, pdo_sqlite, sqlite3
+          coverage: none
+      - run: composer install --no-interaction --no-progress --prefer-dist
+      - run: php artisan test --compact
+
+  frontend:
+    name: Test và build frontend (React)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Dùng "npm install" vì package-lock.json hiện thiếu @emnapi/* nên "npm ci" báo lệch lockfile.
+      - run: npm install --no-audit --no-fund
+      - run: npm test
+      - run: npm run build
+
+  deploy:
+    name: Deploy lên Render
+    needs: [backend, frontend]
+    # Chỉ deploy khi là push lên main (không deploy cho Pull Request)
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gọi Render Deploy Hook
+        env:
+          HOOK: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::error::Chưa cấu hình secret RENDER_DEPLOY_HOOK_URL"
+            exit 1
+          fi
+          curl --fail --silent --show-error -X POST "$HOOK" > /dev/null
+          echo "Đã yêu cầu Render deploy commit ${GITHUB_SHA}"

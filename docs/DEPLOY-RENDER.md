@@ -27,9 +27,37 @@ Code chạy được trên cả PostgreSQL, MySQL và SQLite. Các truy vấn ri
 4. Chờ build (vài phút). Mở tab **Logs** của `librivo`: lần đầu sẽ thấy `CSDL trống, nạp dữ liệu demo...`, sau đó `Khởi động Apache`.
 5. Mở `https://<tên-dịch-vụ>.onrender.com`. Link thật hiện ở đầu trang dịch vụ.
 
-Từ lần sau, mỗi lần push lên `main` Render tự build và deploy lại (`autoDeploy: true`).
+Từ lần sau, việc deploy do GitHub Actions điều khiển (mục 2), nên `render.yaml` đặt `autoDeploy: false`.
 
-## 2. Biến môi trường
+## 2. CI/CD: push lên GitHub thì tự deploy
+
+Workflow [.github/workflows/deploy.yml](../.github/workflows/deploy.yml) chạy khi có push hoặc merge vào `main`:
+
+```mermaid
+flowchart LR
+    P[git push main] --> G[GitHub Actions]
+    G --> B[Test backend Laravel]
+    G --> F[Test + build frontend React]
+    B --> D{Cả hai đạt?}
+    F --> D
+    D -->|Có| H[Gọi Deploy Hook]
+    D -->|Không| X[Dừng, không deploy]
+    H --> R[Render build lại và chạy bản mới]
+```
+
+- Pull Request vào `main` chỉ chạy test, **không deploy**.
+- Test hỏng thì bước deploy bị bỏ qua, bản đang chạy trên Render không bị ảnh hưởng.
+- Có thể bấm chạy tay trong tab **Actions** → *CI/CD* → **Run workflow**.
+
+**Thiết lập một lần** (workflow cần một secret mới có thể gọi Render):
+1. Render → dịch vụ `librivo` → **Settings** → **Deploy Hook** → copy URL. URL này là bí mật, ai có nó đều kích hoạt được deploy.
+2. GitHub → repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**. Tên: `RENDER_DEPLOY_HOOK_URL`, giá trị: URL vừa copy.
+
+Chưa có secret thì job `deploy` báo đỏ với thông báo `Chưa cấu hình secret RENDER_DEPLOY_HOOK_URL`. Test vẫn chạy bình thường.
+
+**Thử kịch bản đầy đủ:** sửa một cuốn sách trên local (hoặc sửa một dòng chữ), commit, push lên `main`, mở tab **Actions** xem ba job chạy, rồi mở tab **Events** của dịch vụ trên Render sẽ thấy một lần deploy mới do Deploy Hook kích hoạt.
+
+## 3. Biến môi trường
 
 | Biến | Nguồn | Ý nghĩa |
 |---|---|---|
@@ -45,7 +73,7 @@ Từ lần sau, mỗi lần push lên `main` Render tự build và deploy lại 
 
 Xoá khối `databases:` và biến `DB_URL` trong `render.yaml`, đặt `DB_CONNECTION=mysql`, rồi khai báo `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` (đánh dấu `sync: false`) cho MySQL thuê ngoài. Nhà cung cấp dùng CA riêng thì dán nội dung PEM vào biến `DB_SSL_CA_PEM`; nhà cung cấp dùng chứng chỉ công khai thì đặt `MYSQL_ATTR_SSL_CA=/etc/ssl/certs/ca-certificates.crt`. Gói free MySQL của Aiven đã đóng từ 6/11/2026.
 
-## 3. Kiểm tra sau khi deploy
+## 4. Kiểm tra sau khi deploy
 
 1. `https://<host>/up` trả `200`.
 2. Mở trang chủ, vào `/catalog`, tải lại trang (F5) vẫn thấy trang, không báo 404.
@@ -53,7 +81,7 @@ Xoá khối `databases:` và biến `DB_URL` trong `render.yaml`, đặt `DB_CON
 4. Mở **Dashboard** và thử đổi kỳ 7/30/90/365 ngày.
 5. Chạy thử một luồng đầy đủ: yêu cầu mượn → duyệt → bàn giao → trả.
 
-## 4. Hạn chế khi dùng gói free
+## 5. Hạn chế khi dùng gói free
 
 Theo [tài liệu Render](https://render.com/docs/free):
 - **Postgres miễn phí hết hạn sau 30 ngày kể từ lúc tạo**, dung lượng 1 GB, không có sao lưu. Hết hạn bạn có thêm 14 ngày để nâng cấp lên gói trả phí, sau đó CSDL bị xoá. Mỗi workspace chỉ có một Postgres free.
@@ -63,12 +91,12 @@ Theo [tài liệu Render](https://render.com/docs/free):
 - Scheduler (`schedule:work`) chỉ chạy lúc dịch vụ đang thức, nên giữ chỗ hết hạn có thể xử lý trễ khi dịch vụ ngủ.
 - Mail đang ghi vào log (`MAIL_MAILER=log`): link đặt lại mật khẩu xem trong tab Logs.
 
-## 5. Bảo mật trước khi chia sẻ link
+## 6. Bảo mật trước khi chia sẻ link
 
 - **Đổi mật khẩu** các tài khoản demo (`admin@`, `librarian@`, `reader@librivo.local`). Mật khẩu của chúng công khai trong README.
 - Không đưa mật khẩu CSDL vào repo. Với Postgres của Render, chuỗi kết nối do Render tự cấp.
 
-## 6. Đã kiểm chứng gì
+## 7. Đã kiểm chứng gì
 
 | Mục | Kết quả |
 |---|---|
@@ -76,15 +104,16 @@ Theo [tài liệu Render](https://render.com/docs/free):
 | Cùng bộ test trên PostgreSQL 17 thật | 37/37 đạt, 7 migration chạy đủ |
 | Seed dữ liệu demo trên PostgreSQL | 100 sách, 300 bản sao, 37 người dùng, 253 lượt mượn |
 | API trên PostgreSQL | Dashboard 4 kỳ, tìm kiếm không phân biệt hoa thường, đăng nhập, `DB_URL` kiểu Render |
+| Các lệnh của workflow CI/CD chạy trên máy phát triển | Test backend 37/37, test frontend 10/10, build frontend đạt, cả hai file YAML hợp lệ. **Workflow chưa chạy trên GitHub lần nào** |
 | Build image Docker, Apache, `entrypoint.sh` trong container Linux | **Chưa kiểm** (máy phát triển không có Docker). Lỗi nếu có sẽ hiện ở log build đầu tiên trên Render |
 | Test tranh chấp khoá dòng (`tests/Mysql`) | Chỉ viết cho MySQL, chưa chạy trên Postgres |
 
-## 7. Sự cố thường gặp
+## 8. Sự cố thường gặp
 
 | Triệu chứng | Nguyên nhân thường gặp |
 |---|---|
 | Đăng nhập báo 419 | `SANCTUM_STATEFUL_DOMAINS` không khớp host đang truy cập. |
 | Container thoát với "Chưa có DB_URL..." | `DB_URL` không được gắn từ `librivo-db`. Kiểm tra tên database trong `render.yaml`. |
-| "Không migrate được sau 6 lần" | Postgres chưa sẵn sàng, hoặc Postgres đã hết hạn (xem mục 4). |
+| "Không migrate được sau 6 lần" | Postgres chưa sẵn sàng, hoặc Postgres đã hết hạn (xem mục 5). |
 | Lỗi 500 | Xem tab Logs. Tạm đặt `LOG_LEVEL=debug` để thấy chi tiết (đừng bật `APP_DEBUG` trên site công khai). |
 | Build lỗi ở bước `npm install` | Xem log build. `package-lock.json` hiện lệch nên Dockerfile dùng `npm install` thay cho `npm ci`. |
