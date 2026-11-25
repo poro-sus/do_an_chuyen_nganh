@@ -1,0 +1,48 @@
+# Render Blueprint cho LIBRIVO: một Web Service Docker (Laravel + React cùng domain).
+# CSDL MySQL thuê ngoài (Render chỉ có PostgreSQL) -> điền thông tin kết nối khi tạo Blueprint.
+# Hướng dẫn chi tiết: docs/DEPLOY-RENDER.md
+services:
+  - type: web
+    name: librivo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /up
+    autoDeploy: true
+    envVars:
+      - key: APP_NAME
+        value: LIBRIVO
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true # chuỗi ngẫu nhiên 256-bit; entrypoint tự thêm tiền tố base64:
+      - key: LOG_CHANNEL
+        value: stderr # để xem log trong tab Logs của Render
+      - key: LOG_LEVEL
+        value: warning
+      - key: SESSION_SECURE_COOKIE
+        value: "true"
+      - key: MAIL_MAILER
+        value: log # chưa cấu hình SMTP: link reset mật khẩu nằm trong log
+      - key: SEED_ON_BOOT
+        value: "true" # nạp dữ liệu demo khi CSDL còn trống
+      # ---- MySQL thuê ngoài: nhập trong dashboard khi Render hỏi (sync: false) ----
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_DATABASE
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      # Đường dẫn CA hệ thống: đủ cho nhà cung cấp dùng chứng chỉ công khai.
+      # Nhà cung cấp dùng CA riêng (vd. Aiven): xoá dòng này và thêm biến DB_SSL_CA_PEM (dán nội dung PEM).
+      - key: MYSQL_ATTR_SSL_CA
+        value: /etc/ssl/certs/ca-certificates.crt
