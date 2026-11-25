@@ -29,10 +29,14 @@ case "$APP_KEY" in base64:*) ;; *) APP_KEY="base64:$APP_KEY" ;; esac
 KEY_BYTES=$(printf '%s' "${APP_KEY#base64:}" | base64 -d 2>/dev/null | wc -c | tr -d ' ')
 [ "$KEY_BYTES" = "32" ] || die "APP_KEY phải là base64 của đúng 32 byte (hiện $KEY_BYTES byte). Tạo bằng: php artisan key:generate --show"
 
-for v in DB_HOST DB_DATABASE DB_USERNAME DB_PASSWORD; do
-  eval "val=\${$v:-}"
-  [ -n "$val" ] || die "Chưa có biến $v (thông tin MySQL thuê ngoài)."
-done
+# CSDL: hoặc một chuỗi kết nối DB_URL (Render Postgres), hoặc đủ DB_HOST/DB_DATABASE/DB_USERNAME/DB_PASSWORD (MySQL thuê ngoài).
+[ -n "${DB_CONNECTION:-}" ] || die "Chưa có DB_CONNECTION (pgsql hoặc mysql)."
+if [ -z "${DB_URL:-}" ]; then
+  for v in DB_HOST DB_DATABASE DB_USERNAME DB_PASSWORD; do
+    eval "val=\${$v:-}"
+    [ -n "$val" ] || die "Chưa có DB_URL, và cũng thiếu biến $v. Cần một trong hai cách khai báo CSDL."
+  done
+fi
 
 # Một số nhà cung cấp MySQL (vd. Aiven) yêu cầu chứng chỉ CA riêng: dán nội dung PEM vào DB_SSL_CA_PEM.
 if [ -n "${DB_SSL_CA_PEM:-}" ]; then
@@ -53,7 +57,7 @@ artisan config:cache
 # ---------- 3. Migrate (thử lại vài lần phòng khi MySQL chưa sẵn sàng/đang thức dậy) ----------
 attempt=1
 until artisan migrate --force; do
-  [ "$attempt" -lt 6 ] || die "Không migrate được sau $attempt lần. Kiểm tra DB_HOST/DB_PORT/DB_USERNAME/DB_PASSWORD và SSL."
+  [ "$attempt" -lt 6 ] || die "Không migrate được sau $attempt lần. Kiểm tra DB_URL (hoặc DB_HOST/DB_PORT/DB_USERNAME/DB_PASSWORD) và SSL."
   log "Migrate lỗi, thử lại sau 10 giây ($attempt/6)..."
   attempt=$((attempt + 1))
   sleep 10

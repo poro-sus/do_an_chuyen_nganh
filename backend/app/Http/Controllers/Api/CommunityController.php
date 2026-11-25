@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Book;
 use App\Models\Loan;
 use App\Models\Review;
+use App\Support\SqlDate;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
@@ -74,6 +75,6 @@ class CommunityController extends Controller
     {
         $u = $r->user();
 
-        return response()->json(['data' => ['active' => $u->loans()->where('status', 'active')->count(), 'requested' => $u->loans()->whereIn('status', ['requested', 'approved'])->count(), 'returned' => $u->loans()->where('status', 'returned')->count(), 'overdue' => $u->loans()->where('status', 'active')->where('due_at', '<', now())->count(), 'favorites' => $u->favorites()->count(), 'reservations' => $u->reservations()->whereIn('status', ['waiting', 'ready'])->count(), 'unread' => $u->unreadNotifications()->count(), 'unpaid' => (int) $u->fines()->selectRaw('COALESCE(SUM(amount-paid_amount-waived_amount),0) as total')->value('total'), 'history' => $u->loans()->selectRaw("DATE_FORMAT(created_at, '%Y-%m') as month, COUNT(*) as count")->where('created_at', '>=', now()->subMonths(11)->startOfMonth())->groupBy('month')->orderBy('month')->get()]]);
+        return response()->json(['data' => ['active' => $u->loans()->where('status', 'active')->count(), 'requested' => $u->loans()->whereIn('status', ['requested', 'approved'])->count(), 'returned' => $u->loans()->where('status', 'returned')->count(), 'overdue' => $u->loans()->where('status', 'active')->where('due_at', '<', now())->count(), 'favorites' => $u->favorites()->count(), 'reservations' => $u->reservations()->whereIn('status', ['waiting', 'ready'])->count(), 'unread' => $u->unreadNotifications()->count(), 'unpaid' => (int) $u->fines()->selectRaw('COALESCE(SUM(amount-paid_amount-waived_amount),0) as total')->value('total'), 'history' => $u->loans()->selectRaw(SqlDate::label('created_at', true).' as month, COUNT(*) as count')->where('created_at', '>=', now()->subMonths(11)->startOfMonth())->groupBy('month')->orderBy('month')->get()]]);
     }
 }

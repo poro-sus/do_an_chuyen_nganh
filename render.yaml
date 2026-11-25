@@ -1,6 +1,9 @@
-# Render Blueprint cho LIBRIVO: một Web Service Docker (Laravel + React cùng domain).
-# CSDL MySQL thuê ngoài (Render chỉ có PostgreSQL) -> điền thông tin kết nối khi tạo Blueprint.
+# Render Blueprint cho LIBRIVO: một Web Service Docker (Laravel + React cùng domain)
+# và một PostgreSQL miễn phí do Render quản lý. Không cần tài khoản dịch vụ ngoài.
 # Hướng dẫn chi tiết: docs/DEPLOY-RENDER.md
+#
+# Lưu ý: Postgres miễn phí của Render hết hạn sau 30 ngày kể từ lúc tạo (có thêm 14 ngày để
+# nâng cấp trước khi bị xoá) và không có sao lưu.
 services:
   - type: web
     name: librivo
@@ -29,20 +32,15 @@ services:
         value: log # chưa cấu hình SMTP: link reset mật khẩu nằm trong log
       - key: SEED_ON_BOOT
         value: "true" # nạp dữ liệu demo khi CSDL còn trống
-      # ---- MySQL thuê ngoài: nhập trong dashboard khi Render hỏi (sync: false) ----
       - key: DB_CONNECTION
-        value: mysql
-      - key: DB_HOST
-        sync: false
-      - key: DB_PORT
-        sync: false
-      - key: DB_DATABASE
-        sync: false
-      - key: DB_USERNAME
-        sync: false
-      - key: DB_PASSWORD
-        sync: false
-      # Đường dẫn CA hệ thống: đủ cho nhà cung cấp dùng chứng chỉ công khai.
-      # Nhà cung cấp dùng CA riêng (vd. Aiven): xoá dòng này và thêm biến DB_SSL_CA_PEM (dán nội dung PEM).
-      - key: MYSQL_ATTR_SSL_CA
-        value: /etc/ssl/certs/ca-certificates.crt
+        value: pgsql
+      - key: DB_URL
+        fromDatabase:
+          name: librivo-db
+          property: connectionString
+
+databases:
+  - name: librivo-db
+    plan: free
+    databaseName: librivo
+    user: librivo

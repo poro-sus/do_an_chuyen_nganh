@@ -13,6 +13,7 @@ use App\Models\Loan;
 use App\Models\Setting;
 use App\Models\User;
 use App\Services\Audit;
+use App\Support\SqlDate;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
@@ -41,9 +42,8 @@ class AdminController extends Controller
         $days = $r->integer('period', 30);
         $start = $days === 365 ? now()->subMonths(11)->startOfMonth() : now()->subDays($days - 1)->startOfDay();
         $monthly = $days === 365;
-        $fmt = $monthly ? '%Y-%m' : '%Y-%m-%d';
-        $borrowed = Loan::where('borrowed_at', '>=', $start)->selectRaw("DATE_FORMAT(borrowed_at, '$fmt') as label,COUNT(*) as count")->groupBy('label')->pluck('count', 'label');
-        $returned = Loan::where('returned_at', '>=', $start)->selectRaw("DATE_FORMAT(returned_at, '$fmt') as label,COUNT(*) as count")->groupBy('label')->pluck('count', 'label');
+        $borrowed = Loan::where('borrowed_at', '>=', $start)->selectRaw(SqlDate::label('borrowed_at', $monthly).' as label,COUNT(*) as count')->groupBy('label')->pluck('count', 'label');
+        $returned = Loan::where('returned_at', '>=', $start)->selectRaw(SqlDate::label('returned_at', $monthly).' as label,COUNT(*) as count')->groupBy('label')->pluck('count', 'label');
         $chart = [];
         $cursor = $monthly ? $start->copy()->startOfMonth() : $start->copy();
         while ($cursor <= now()) {
@@ -61,8 +61,8 @@ class AdminController extends Controller
             'due_soon' => Loan::with(['book:id,title', 'user:id,name'])->where('status', 'active')->whereBetween('due_at', [now(), now()->addDays(3)])->orderBy('due_at')->limit(5)->get(),
             'overdue_loans' => Loan::with(['book:id,title', 'user:id,name'])->where('status', 'active')->where('due_at', '<', now())->orderBy('due_at')->limit(5)->get(),
             'activity' => AuditLog::with('user:id,name')->latest()->limit(7)->get(),
-            'fine_trend' => Fine::where('created_at', '>=', $start)->selectRaw("DATE_FORMAT(created_at, '$fmt') as label,SUM(amount) as amount")->groupBy('label')->orderBy('label')->get(),
-            'member_trend' => User::role('Reader')->where('created_at', '>=', $start)->selectRaw("DATE_FORMAT(created_at, '$fmt') as label,COUNT(*) as count")->groupBy('label')->orderBy('label')->get(),
+            'fine_trend' => Fine::where('created_at', '>=', $start)->selectRaw(SqlDate::label('created_at', $monthly).' as label,SUM(amount) as amount')->groupBy('label')->orderBy('label')->get(),
+            'member_trend' => User::role('Reader')->where('created_at', '>=', $start)->selectRaw(SqlDate::label('created_at', $monthly).' as label,COUNT(*) as count')->groupBy('label')->orderBy('label')->get(),
         ]]);
     }
 
@@ -74,7 +74,7 @@ class AdminController extends Controller
         }
         if ($r->filled('search')) {
             $s = '%'.$r->input('search').'%';
-            $q->where(fn ($q) => $q->where('name', 'like', $s)->orWhere('email', 'like', $s)->orWhere('member_code', 'like', $s));
+            $q->where(fn ($q) => $q->whereLike('name', $s)->orWhereLike('email', $s)->orWhereLike('member_code', $s));
         }
         if ($r->filled('locked')) {
             $q->where('locked', $r->boolean('locked'));
@@ -187,7 +187,7 @@ class AdminController extends Controller
     {
         $q = AuditLog::with('user:id,name');
         if ($r->filled('search')) {
-            $q->where('action', 'like', '%'.$r->input('search').'%');
+            $q->whereLike('action', '%'.$r->input('search').'%');
         }
 
         return JsonResource::collection($q->latest()->paginate(30))->response();

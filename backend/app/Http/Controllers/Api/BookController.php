@@ -35,7 +35,7 @@ class BookController extends Controller
         }
         if ($r->filled('search')) {
             $term = mb_substr($r->string('search'), 0, 150);
-            $q->where(fn ($b) => $b->where('title', 'like', '%'.$term.'%')->orWhere('isbn', 'like', '%'.$term.'%')->orWhereHas('authors', fn ($a) => $a->where('name', 'like', '%'.$term.'%')));
+            $q->where(fn ($b) => $b->whereLike('title', '%'.$term.'%')->orWhereLike('isbn', '%'.$term.'%')->orWhereHas('authors', fn ($a) => $a->whereLike('name', '%'.$term.'%')));
         }
         if ($r->filled('category')) {
             $q->whereHas('categories', fn ($c) => $c->where('categories.id', $r->integer('category')));
@@ -137,7 +137,7 @@ class BookController extends Controller
         } if ($r->filled('status')) {
             $q->where('status', $r->input('status'));
         } if ($r->filled('search')) {
-            $q->where(fn ($b) => $b->where('barcode', 'like', '%'.$r->input('search').'%')->orWhereHas('book', fn ($b) => $b->where('title', 'like', '%'.$r->input('search').'%')));
+            $q->where(fn ($b) => $b->whereLike('barcode', '%'.$r->input('search').'%')->orWhereHas('book', fn ($b) => $b->whereLike('title', '%'.$r->input('search').'%')));
         }
 
         return JsonResource::collection($q->latest()->paginate(20))->response();

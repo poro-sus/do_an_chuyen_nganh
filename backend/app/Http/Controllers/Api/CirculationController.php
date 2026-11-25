@@ -36,7 +36,7 @@ class CirculationController extends Controller
         }
         if ($r->filled('search')) {
             $s = '%'.$r->input('search').'%';
-            $q->where(fn ($b) => $b->whereHas('book', fn ($b) => $b->where('title', 'like', $s))->orWhereHas('copy', fn ($c) => $c->where('barcode', 'like', $s))->orWhereHas('user', fn ($u) => $u->where('name', 'like', $s)));
+            $q->where(fn ($b) => $b->whereHas('book', fn ($b) => $b->whereLike('title', $s))->orWhereHas('copy', fn ($c) => $c->whereLike('barcode', $s))->orWhereHas('user', fn ($u) => $u->whereLike('name', $s)));
         }
 
         return JsonResource::collection($q->latest()->paginate(20))->response();

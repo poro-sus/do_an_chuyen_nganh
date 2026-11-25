@@ -28,7 +28,7 @@ class TaxonomyController extends Controller
         $model = $this->model($type);
         $q = $model::query()->withCount($type === 'shelves' ? 'copies' : 'books');
         if ($r->filled('search')) {
-            $q->where('name', 'like', '%'.$r->input('search').'%');
+            $q->whereLike('name', '%'.$r->input('search').'%');
         }
 
 return response()->json(['data' => $q->orderBy('name')->limit(500)->get()]);
